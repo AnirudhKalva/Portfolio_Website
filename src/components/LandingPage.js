@@ -219,7 +219,7 @@ const LandingPage = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          Learn More ↓
+          Scroll to know more ↓
         </motion.button>
       </div>
 
