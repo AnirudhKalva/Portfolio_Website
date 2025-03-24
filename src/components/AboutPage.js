@@ -3,7 +3,7 @@ import devGif from "../images/1709674937953.gif"; // Replace with your GIF
 
 const AboutPage = () => {
   return (
-    <section id="about" className=" relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#10151F] to-[#0E1929] text-white px-8">
+    <section id="about" className=" relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#10151F] to-[#0E1929] text-white px-8 pt-10 pb-20">
       <div className="container mx-auto flex flex-col items-center text-center">
         
         {/* Section Title */}

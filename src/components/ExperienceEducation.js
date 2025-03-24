@@ -63,7 +63,7 @@ const ExperienceEducation = () => {
   ];
 
   return (
-    <section id="experience-education" className="relative min-h-screen py-16 bg-[#0E1929] text-white">
+    <section id="experience-education" className="relative min-h-screen py-16 pt-20 bg-[#0E1929] text-white">
       <div className="container mx-auto px-6">
         {/* Section Title */}
         <motion.h2
