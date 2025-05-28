@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Bai+Jamjuree:wght@300;400;600&display=swap');
 
+
+
 body {
   font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -11,3 +13,12 @@ body {
 h1, h2, h3 {
   font-family: 'Exo 2', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    @apply bg-white text-black bg-[#0A0F1A] text-white transition-colors duration-300;
+  }

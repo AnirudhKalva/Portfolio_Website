@@ -75,7 +75,7 @@ const ContactPage = () => {
 
         <p className="text-center mb-8 text-gray-400">Feel free to reach out with any inquiries, collaborations, or just to connect!</p>
 
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto bg-[#1E1E1E] p-8 rounded-lg shadow-xl hover:shadow-[#00E0FF] transition-shadow duration-300">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto dark:bg-[#1E1E1E] p-8 rounded-lg shadow-xl hover:shadow-[#00E0FF] transition-shadow duration-300">
           <div className="relative flex flex-col">
           <label
     className={`absolute left-4 top-3 text-[#00E0FF] text-sm transition-all ${

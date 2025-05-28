@@ -6,6 +6,7 @@ import { DiMongodb, DiDocker, DiJenkins, DiVisualstudio   } from "react-icons/di
 import { VscAzure } from "react-icons/vsc";
 import { SiTypescript, SiKubernetes, SiFlask,SiJavascript,SiDotnet, SiSpring, SiPostman, SiNextdotjs,SiSharp, SiMysql,SiIntellijidea, SiSwagger, SiGo, SiJupyter,SiTailwindcss, SiPostgresql} from "react-icons/si";
 import { TbBrandVscode} from "react-icons/tb";
+import { useTheme } from "../contexts/ThemeContext";
 gsap.registerPlugin(ScrollTrigger);
 
 const SkillsPage = () => {
@@ -66,7 +67,7 @@ const SkillsPage = () => {
     <section
       id="skills"
       ref={skillsRef}
-      className="relative min-h-screen flex flex-col justify-center items-center text-white py-40 px-6 pt-20"
+      className="relative min-h-screen flex flex-col justify-center items-center dark:text-white py-40 px-6 pt-20"
     >
       <h2 className="text-5xl font-bold text-[#00E0FF] mb-6">My Technical Expertise</h2>
 
@@ -75,7 +76,7 @@ const SkillsPage = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="skill-card bg-[#1E293B] text-[#00E0FF] p-4 rounded-lg shadow-md flex flex-col items-center gap-2 hover:bg-[#334155] hover:shadow-[#00E0FF] transition-all duration-300"
+            className={`skill-card dark:bg-[#1E293B] text-[#00E0FF] p-4 rounded-lg shadow-md flex flex-col items-center gap-2 hover:bg-[#334155] hover:shadow-[#00E0FF] transition-all duration-300`}
           >
             {skill.icon}
             <span className="text-lg font-medium">{skill.label}</span>

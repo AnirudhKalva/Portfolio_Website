@@ -39,9 +39,9 @@ const ExperienceEducation = () => {
       company: "University of Houston",
       date: "May 2024 - Present",
       description: [
-        "Developed a full-fledged transportation asset management tool using React.js and Node.js, enabling real-time management and tracking of 50,000+ traffic assets across Texas for infrastructure monitoring.",
-        "Built and integrated AI models (YOLOv8, ResNet50) to detect and assess traffic asset conditions, achieving 82% accuracy in identifying defective infrastructure from real-time data.",
-        "Optimized model inference and data processing pipelines, reducing response time by 40%, and seamlessly integrating AI-driven insights into the web tool for improved asset management in Texas."
+        "Developed a full-fledged transportation asset management tool using React.js and Node.js backend, enabling real-time visualization and tracking of 50,000+ traffic assets across Texas for infrastructure monitoring",
+        "Built and integrated AI models (YOLOv8, ResNet50) into the traffic asset management tool to detect and assess infrastructure conditions in real time, achieving 82% accuracy and reducing model inference latency by 40% through optimized data processing pipelines.",
+        "Enhanced an existing equipment cost and depreciation management tool for the Illinois Center for Transportation using Angular and Node.js, adding bulk data upload support, fixing critical backend issues, and improving admin workflows for year-wise asset tracking."
       ],
       icon: <FaBriefcase />,
     },
@@ -50,9 +50,9 @@ const ExperienceEducation = () => {
       company: "Optum",
       date: "July 2021 - Aug 2023",
       description: [
-        "Developed and enhanced components of the XLCare application using C# and ASP.NET, improving system performance for pharmacists and care managers, reducing load times by 30% and enhancing workflow efficiency by 15%.",
+        "Developed and enhanced components of the XLCare application using C# and ASP.NET, improving user experience and optimizing system performance for pharmacists and care managers, leading to a 30% reduction in load times and enhancing workflow efficiency by 15%.",
         "Contributed to the development of the Practitioner Portal using React, reducing code redundancy by 25% and improving maintainability.",
-        "Designed scalable REST APIs using Spring Java, improving the interoperability of XLCare with HouseCalls, reducing API response times by 30%.",
+        "Designed scalable REST APIs using Spring Boot, improving the interoperability of XLCare with HouseCalls, reducing API response times by 30%.",
         "Engineered and optimized data pipelines for XLCare, integrating Apache Kafka, AWS S3, and Redshift, leading to a 20% reduction in data latency and improved processing efficiency.",
         "Implemented and maintained CI/CD pipelines using Docker and Kubernetes, automating build, testing, and deployment processes, reducing deployment time by 23% and minimizing manual intervention.",
         "Diagnosed and resolved critical system bugs by debugging configuration files, analyzing logs, and optimizing SQL queries, leading to a 15% reduction in service downtime.",
@@ -101,7 +101,7 @@ const ExperienceEducation = () => {
                   <span className="text-[#00E0FF]">{openIndex.edu === index ? "▲" : "▼"}</span>
                 </button>
                 <motion.div
-                  className="px-4 pb-4 text-gray-300 overflow-hidden"
+                  className="px-4 pb-4 dark:text-gray-300 overflow-hidden"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: openIndex.edu === index ? "auto" : 0, opacity: openIndex.edu === index ? 1 : 0 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -141,7 +141,7 @@ const ExperienceEducation = () => {
                   <span className="text-[#00E0FF]">{openIndex.exp === index ? "▲" : "▼"}</span>
                 </button>
                 <motion.div
-                  className="px-4 pb-4 text-gray-300 overflow-hidden"
+                  className="px-4 pb-4 dark:text-gray-300 overflow-hidden"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: openIndex.exp === index ? "auto" : 0, opacity: openIndex.exp === index ? 1 : 0 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}

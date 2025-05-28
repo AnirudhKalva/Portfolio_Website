@@ -1,26 +1,32 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { Typewriter } from "react-simple-typewriter";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import profilePhoto from "../images/ProfilePhoto.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useTheme } from "../contexts/ThemeContext";
+
 const LandingPage = () => {
   
+ const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   useEffect(() => {
-    gsap.fromTo(
-      "#profile-photo",
-      { y: -10 },
-      {
-        y: 10,
-        repeat: -1,
-        yoyo: true,
-        duration: 2,
-        ease: "easeInOut",
-      }
-    );
-  }, []);
+    if (isImageLoaded) {
+      gsap.fromTo(
+        "#profile-photo",
+        { y: -10 },
+        {
+          y: 10,
+          repeat: -1,
+          yoyo: true,
+          duration: 2,
+          ease: "easeInOut",
+        }
+      );
+    }
+  }, [isImageLoaded]);
 
   const scrollToAbout = () => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
@@ -56,7 +62,7 @@ const LandingPage = () => {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value":"#ffffff"  
     },
     "shape": {
       "type": "circle",
@@ -224,19 +230,20 @@ const LandingPage = () => {
       </div>
 
       {/* Right Section - Profile Photo */}
-      <motion.div
-        id="profile-photo"
-        className="mb-6 z-10 md:w-2/5 flex justify-end"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <img
-          src={profilePhoto}
-          alt="Anirudh Kalva"
-          className="size-45 flex shadow-lg rounded-lg border-4 border-[#00E0FF]"
-        />
-      </motion.div>
+    <motion.div
+      id="profile-photo"
+      className="mb-6 z-10 md:w-2/5 flex justify-end"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={isImageLoaded ? { opacity: 1, scale: 1 } : {}}
+      transition={{ duration: 1 }}
+    >
+      <img
+        src={profilePhoto}
+        alt="Anirudh Kalva"
+        onLoad={() => setIsImageLoaded(true)}
+        className="w-45 h-45 object-cover shadow-lg rounded-lg border-4 border-[#00E0FF] transition duration-500 ease-in-out"
+      />
+    </motion.div>
   <div className="absolute bottom-0 left-0 w-full">
         <svg className="w-full h-16" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="#1E293B" points="0,100 100,0 100,100"/>

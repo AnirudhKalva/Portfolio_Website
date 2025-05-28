@@ -10,11 +10,12 @@ import Navbar from "./components/SideBar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader"; 
 import ExperienceEducation from "./components/ExperienceEducation";
+import { ThemeProvider } from './contexts/ThemeContext';
 
 const App = () => {
   // const [loading, setLoading] = useState(true);
   return (
-    <div className={" bg-gradient-to-b from-[#10151F] to-[#0E1929] overflow-x-hidden overflow-y-hidden min-h-screen bg-[#0D1117] text-white "}>
+    <div className={" bg-white text-black bg-gradient-to-b from-[#10151F] to-[#0E1929] text-white min-h-screen overflow-x-hidden overflow-y-hidden transition-colors duration-300"}>
        {/* Navbar */}
        <Navbar />
           

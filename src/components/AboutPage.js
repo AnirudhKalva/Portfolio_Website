@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import devGif from "../images/1709674937953.gif"; // Replace with your GIF
+import { useTheme } from "../contexts/ThemeContext";
 
 const AboutPage = () => {
   return (
-    <section id="about" className=" relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#10151F] to-[#0E1929] text-white px-8 pt-10 pb-20">
+    <section id="about" className=" relative min-h-screen flex flex-col justify-center 
+bg-white text-black 
+bg-gradient-to-b dark:from-[#10151F] to-[#0E1929] text-white 
+px-8 pt-10 pb-20 transition-colors duration-300">
       <div className="container mx-auto flex flex-col items-center text-center">
         
         {/* Section Title */}
@@ -20,7 +24,7 @@ const AboutPage = () => {
        
           {/* Left - About Me Text */}
           <motion.div 
-            className="w-full md:w-3/5 text-2xl leading-relaxed text-gray-300"
+            className="w-full md:w-3/5 text-2xl leading-relaxed dark:text-gray-300"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
