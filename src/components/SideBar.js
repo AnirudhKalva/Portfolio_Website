@@ -33,7 +33,7 @@ const SideBar = () => {
       </div>
 
       {/* Hamburger Button */}
-      <button className="md:hidden text-2xl text-black dark:text-white" onClick={() => setIsNavOpen(true)}>
+      <button className="md:hidden text-2xl text-black text-white" onClick={() => setIsNavOpen(true)}>
         <FaBars />
       </button>
 
