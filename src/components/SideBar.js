@@ -14,7 +14,7 @@ const SideBar = () => {
   };
 
   return (
-    <header className="bg-white bg-[#0A0F1A] shadow-md p-4 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg backdrop-blur-lg transition-colors duration-300">
+    <header className="bg-[#0A0F1A] shadow-md p-4 flex justify-between items-center fixed w-full top-0 z-50 shadow-lg backdrop-blur-lg transition-colors duration-300">
       {/* Logo */}
       <img
         src={logo}

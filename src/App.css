@@ -18,7 +18,3 @@ html {
     scroll-behavior: smooth;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-
-  body {
-    @apply bg-white text-black bg-[#0A0F1A] text-white transition-colors duration-300;
-  }
