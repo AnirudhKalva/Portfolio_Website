@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio_Website/static/css/main.e6c3944e.css",
-    "main.js": "/Portfolio_Website/static/js/main.422b7e35.js",
+    "main.css": "/Portfolio_Website/static/css/main.d270489b.css",
+    "main.js": "/Portfolio_Website/static/js/main.90f1adec.js",
     "static/js/568.38d6f652.chunk.js": "/Portfolio_Website/static/js/568.38d6f652.chunk.js",
     "static/media/1709674937953.gif": "/Portfolio_Website/static/media/1709674937953.117215e1da0aa79b3b11.gif",
+    "static/media/logo1.png": "/Portfolio_Website/static/media/logo1.e4a975e80b0268f8b818.png",
     "static/media/ClickStream.png": "/Portfolio_Website/static/media/ClickStream.f71a09046b6b7f47996b.png",
     "static/media/ProfilePhoto.jpg": "/Portfolio_Website/static/media/ProfilePhoto.c358176c86225c0c7311.jpg",
     "static/media/covid.png": "/Portfolio_Website/static/media/covid.1652a3bf453297f4503d.png",
@@ -17,12 +18,12 @@
     "static/media/music1.webp": "/Portfolio_Website/static/media/music1.b5753977622be67922e0.webp",
     "static/media/revicons.woff": "/Portfolio_Website/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio_Website/index.html",
-    "main.e6c3944e.css.map": "/Portfolio_Website/static/css/main.e6c3944e.css.map",
-    "main.422b7e35.js.map": "/Portfolio_Website/static/js/main.422b7e35.js.map",
+    "main.d270489b.css.map": "/Portfolio_Website/static/css/main.d270489b.css.map",
+    "main.90f1adec.js.map": "/Portfolio_Website/static/js/main.90f1adec.js.map",
     "568.38d6f652.chunk.js.map": "/Portfolio_Website/static/js/568.38d6f652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c3944e.css",
-    "static/js/main.422b7e35.js"
+    "static/css/main.d270489b.css",
+    "static/js/main.90f1adec.js"
   ]
 }
