@@ -39,12 +39,12 @@ const SideBar = () => {
 
       {/* Mobile Sidebar */}
       {isNavOpen && (
-        <div className="fixed inset-0 bg-white dark:bg-[#0A0F1A] bg-opacity-95 flex flex-col items-center justify-center z-50 w-full h-full transition-colors duration-300">
-          <button className="absolute top-6 right-6 text-3xl text-black dark:text-white" onClick={() => setIsNavOpen(false)}>
+        <div className="fixed inset-0 bg-white bg-[#0A0F1A] bg-opacity-95 flex flex-col items-center justify-center z-50 w-full h-full transition-colors duration-300">
+          <button className="absolute top-6 right-6 text-3xl text-black text-white" onClick={() => setIsNavOpen(false)}>
             <FaTimes />
           </button>
 
-          <ul className="flex flex-col items-center space-y-5 text-xl text-black dark:text-white">
+          <ul className="flex flex-col items-center space-y-5 text-xl text-black text-white">
             <li><a href="#about" onClick={(e) => handleSmoothScroll(e, "#about")} className="hover:text-[#00E0FF]">About</a></li>
             <li><a href="#experience-education" onClick={(e) => handleSmoothScroll(e, "#experience-education")} className="hover:text-[#00E0FF]">Career</a></li>
             <li><a href="#skills" onClick={(e) => handleSmoothScroll(e, "#skills")} className="hover:text-[#00E0FF]">Skills</a></li>
