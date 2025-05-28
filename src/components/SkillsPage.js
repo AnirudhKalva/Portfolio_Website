@@ -76,7 +76,7 @@ const SkillsPage = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`skill-card dark:bg-[#1E293B] text-[#00E0FF] p-4 rounded-lg shadow-md flex flex-col items-center gap-2 hover:bg-[#334155] hover:shadow-[#00E0FF] transition-all duration-300`}
+            className={`skill-card bg-[#1E293B] text-[#00E0FF] p-4 rounded-lg shadow-md flex flex-col items-center gap-2 hover:bg-[#334155] hover:shadow-[#00E0FF] transition-all duration-300`}
           >
             {skill.icon}
             <span className="text-lg font-medium">{skill.label}</span>
